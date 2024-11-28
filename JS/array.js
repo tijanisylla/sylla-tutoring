@@ -5,7 +5,7 @@
 // console.log(company[0]);
 // console.log(company[1]);
 // console.log(company[3]);
-// console.log(company[4]);
+// console.log(company[4]) ddd;
 
 // You can loop , Pick a specific employer, Find employer, Find an index
 const company = ["Sylla", "Karina", "John", "Amie"];
