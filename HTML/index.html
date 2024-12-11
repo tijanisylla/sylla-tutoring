@@ -5,5 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <button id="btn-increase">increase</button>
+    <span id="count">0</span>
+    <button id="btn-decrease">decrease</button>
+  </body>
+
+  <script>
+    let count = 0;
+    const countEL = document.querySelector("#count");
+    const btnIncrease = document.querySelector("#btn-increase");
+    const btnDecrease = document.querySelector("#btn-decrease");
+
+    function setCounterText() {
+      countEL.textContent = count;
+    }
+
+    btnIncrease.addEventListener("click", () => {
+      count++;
+
+      setCounterText();
+    });
+
+    btnDecrease.addEventListener("click", () => {
+      if (count > 0) {
+        count--;
+        setCounterText();
+      }
+    });
+  </script>
 </html>
