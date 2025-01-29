@@ -9,6 +9,7 @@ const netflixQueue = {
   ],
   watchMovie() {
     this.queue.pop(); // Watched it already
+    console.log(this.queue);
     return "Watched a movie!";
   },
   addMovie(movie) {
@@ -26,17 +27,18 @@ const netflixQueue = {
     return list;
   },
 };
+console.log(netflixQueue.watchMovie());
+console.log(this);
+// console.log(`
+//   Printing movie queue!
 
-console.log(`
-  Printing movie queue!
+//   ${netflixQueue.printQueue()}
+//   ${netflixQueue.watchMovie()}
+//   Printing movie queue!
 
-  ${netflixQueue.printQueue()}
-  ${netflixQueue.watchMovie()}
-  Printing movie queue!
+//   ${netflixQueue.printQueue()}
+//   ${netflixQueue.addMovie("Black Swan")}
+//   Printing movie queue!
 
-  ${netflixQueue.printQueue()}
-  ${netflixQueue.addMovie("Black Swan")}
-  Printing movie queue!
-
-  ${netflixQueue.printQueue()}
-  `);
+//   ${netflixQueue.printQueue()}
+//   `);
